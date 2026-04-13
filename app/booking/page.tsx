@@ -455,19 +455,22 @@ function SuccessScreen({ data }: { data: BookingData }) {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      className="text-center py-10 space-y-8 max-w-lg mx-auto"
-    >
+    <div className="text-center py-10 space-y-8 max-w-lg mx-auto">
       <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-        className="w-28 h-28 bg-linear-to-br from-brand-cocoa to-brand-blush rounded-full flex items-center justify-center mx-auto shadow-2xl shadow-brand-blush/30"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
       >
-        <Check size={56} className="text-white" strokeWidth={3} />
-      </motion.div>
+        <div
+          className="w-28 h-28 bg-linear-to-br from-brand-cocoa to-brand-blush rounded-full flex items-center justify-center mx-auto shadow-2xl shadow-brand-blush/30"
+        >
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+          >
+            <Check size={56} className="text-white" strokeWidth={3} />
+          </motion.div>
+        </div>
 
       <div className="space-y-3">
         <h3 className="text-4xl font-serif text-brand-espresso">You're Almost Booked!</h3>
@@ -501,7 +504,8 @@ function SuccessScreen({ data }: { data: BookingData }) {
       <Link href="/" className="block text-sm font-bold text-brand-espresso/40 hover:text-brand-cocoa transition-colors">
         Return to Home
       </Link>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
 
