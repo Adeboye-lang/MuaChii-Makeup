@@ -1,0 +1,16 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "quote": "I walked out feeling like the most beautiful version of myself. The makeup was flawless and lasted all day!",
+      "author": "Amaka O.",
+      "service": "Bridal Glam"
+    },
+    {
+      "id": 2,
+      "quote": "Professional, punctual, and incredibly talented. This is luxury makeup done right.",
+      "author": "Chioma W.",
+      "service": "Soft Glam"
+    }
+  ]
+}

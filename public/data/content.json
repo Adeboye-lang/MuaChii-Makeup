@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "headline": "Feel Gorgeous, Look Flawless",
+    "subtitle": "Professional makeup artistry that celebrates your beauty",
+    "cta1": "Book Your Glam ✨",
+    "cta2": "See My Work"
+  },
+  "brandStory": {
+    "title": "The Experience",
+    "subtitle": "Beauty with intention means recognizing the elegance that already exists within you — and giving it permission to shine.",
+    "description": "With over 7 years of experience in the luxury beauty industry, my approach blends deep artistic sensibility with technical precision. Every client walks out of my chair feeling not just beautiful, but deeply empowered and authentically, gloriously themselves.",
+    "cta": "Meet The Artist"
+  },
+  "portfolio": {
+    "title": "The Portfolio",
+    "subtitle": "A glimpse into the art. Every face tells a story of elegance, confidence, and transformation.",
+    "cta": "Explore Full Gallery ✨"
+  },
+  "testimonials": {
+    "title": "What They Say",
+    "subtitle": "💬 Client Love"
+  },
+  "finalCta": {
+    "question": "Ready to step into your moment?",
+    "description": "Secure your date and let me craft a look you will remember forever.",
+    "button": "Book Your Glam ✨"
+  },
+  "navbar": {
+    "brand": "MuaChii",
+    "links": ["Home", "About", "Services", "Portfolio"]
+  },
+  "footer": {
+    "tagline": "Luxury Makeup for Every Moment",
+    "description": "Premium feminine makeup artistry in Abuja, Nigeria.",
+    "quickLinks": ["Home", "Portfolio", "Services", "About", "Contact"],
+    "legal": ["Privacy Policy", "Terms of Service", "Booking Policy"]
+  },
+  "contact": {
+    "email": "hello@muachii.com",
+    "phone": "+234 (0) 902 556 7874",
+    "whatsappNumber": "+2349025567874",
+    "location": "Abuja, Nigeria",
+    "instagram": "https://www.instagram.com/mua.chii?igsh=MWQ3M2podGFiNmlscQ%3D%3D&utm_source=qr"
+  },
+  "about": {
+    "title": "My passion for beauty began as a young girl fascinated by the transformative power of makeup.",
+    "bio": "With over 7 years of experience in the luxury beauty industry, my approach blends deep artistic sensibility with technical precision. Every client walks out of my chair feeling not just beautiful, but deeply empowered and authentically, gloriously themselves.",
+    "philosophy": "I believe makeup should never mask who you are — it should amplify it. Beauty with intention means recognizing the elegance that already exists within you and giving it permission to shine.",
+    "cta": "Book Your Glam ✨"
+  },
+  "colors": {
+    "champagne": "#FFF0F8",
+    "nude": "#FFB3D9",
+    "blush": "#FF42A1",
+    "cocoa": "#E6007E",
+    "espresso": "#6B0033",
+    "gold": "#FF1493"
+  }
+}

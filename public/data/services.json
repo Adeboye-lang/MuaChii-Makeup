@@ -1,0 +1,110 @@
+{
+  "services": [
+    {
+      "id": "bridal-glam",
+      "name": "Bridal Glam",
+      "duration": "90 mins",
+      "price": 80000,
+      "features": [
+        "Luxury Skin Prep",
+        "Premium Falsies",
+        "Touch-up Kit",
+        "Body Glow"
+      ],
+      "description": "Our signature bridal service includes luxury skin preparation with serums and moisturizers, premium false lashes, a personalized touch-up kit, and body glow for a cohesive red-carpet-ready look."
+    },
+    {
+      "id": "soft-glam",
+      "name": "Soft Glam",
+      "duration": "60 mins",
+      "price": 35000,
+      "features": [
+        "Custom Underpainting",
+        "Soft Eye",
+        "Lash Application",
+        "Lip Combo"
+      ],
+      "description": "Effortless elegance with custom underpainting, soft eyeshadow blending, lash application, and coordinated lip color combination."
+    },
+    {
+      "id": "natural-beat",
+      "name": "Natural Beat",
+      "duration": "45 mins",
+      "price": 25000,
+      "features": [
+        "Light Coverage",
+        "Natural Lash",
+        "Glowy Finish",
+        "Minimal Contouring"
+      ],
+      "description": "Fresh, understated beauty that enhances your natural features with light coverage, natural lash application, and subtle contouring."
+    },
+    {
+      "id": "photoshoot",
+      "name": "Photoshoot Makeup",
+      "duration": "120 mins",
+      "price": 60000,
+      "features": [
+        "HD Base",
+        "Multi-look Options",
+        "On-set Touch-ups",
+        "Full Lash Set"
+      ],
+      "description": "Camera-ready perfection with HD foundation, multiple makeup look options, on-set touch-ups, and premium full lash sets."
+    },
+    {
+      "id": "home-service",
+      "name": "Home Service",
+      "duration": "75 mins",
+      "price": 50000,
+      "features": [
+        "Travel Included",
+        "Professional Setup",
+        "Premium Products",
+        "Luxury Prep"
+      ],
+      "description": "We bring luxury to you. Professional in-home makeup services within Abuja with all products and tools included."
+    },
+    {
+      "id": "group-event",
+      "name": "Group/Event Glam",
+      "duration": "Varies",
+      "price": null,
+      "features": [
+        "Group Coordination",
+        "Cohesive Aesthetic",
+        "Discounts Available",
+        "Flexible Scheduling"
+      ],
+      "description": "Perfect for bridal parties, events, and celebrations. Custom quotes based on group size and event requirements."
+    }
+  ],
+  "addOns": [
+    {
+      "id": "body-glow",
+      "name": "Body Glow",
+      "price": 5000
+    },
+    {
+      "id": "hd-brows",
+      "name": "HD Brows",
+      "price": 3000
+    },
+    {
+      "id": "glitter-eyes",
+      "name": "Glitter Eyes",
+      "price": 4000
+    },
+    {
+      "id": "premium-lash",
+      "name": "Premium Lash Set",
+      "price": 4500
+    }
+  ],
+  "serviceInclusions": [
+    "Luxury Skin Prep (serums, moisturizers, primers)",
+    "Premium Lashes (strip/individual custom-fitted)",
+    "12+ hour wear guarantee with setting sprays",
+    "Personalized consultation"
+  ]
+}

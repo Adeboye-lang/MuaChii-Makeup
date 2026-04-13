@@ -1,0 +1,82 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "category": "Before Your Appointment",
+      "question": "How far in advance should I book?",
+      "answer": "I recommend booking 4-6 weeks in advance, especially for bridal or event makeup. However, I do accept last-minute bookings subject to availability."
+    },
+    {
+      "id": 2,
+      "category": "Before Your Appointment",
+      "question": "What should I do to prepare for my appointment?",
+      "answer": "Please arrive with a clean, moisturized face. Avoid heavy cream or oil on your skin just before arrival. Bring reference photos if you have a specific look in mind."
+    },
+    {
+      "id": 3,
+      "category": "Before Your Appointment",
+      "question": "Can I do a trial before my event?",
+      "answer": "Yes! Trial sessions are highly recommended for bridal and event makeup. Trials allow us to perfect your look and make any adjustments needed."
+    },
+    {
+      "id": 4,
+      "category": "Before Your Appointment",
+      "question": "Do you work with my skin type and tone?",
+      "answer": "Absolutely! I specialize in creating stunning makeup for melanin-rich skin tones and adapt my techniques and products to work with all skin types."
+    },
+    {
+      "id": 5,
+      "category": "Payments & Deposits",
+      "question": "What's your deposit policy?",
+      "answer": "A 50% non-refundable deposit is required to secure your booking date and time. The remaining balance is due on the day of your appointment."
+    },
+    {
+      "id": 6,
+      "category": "Payments & Deposits",
+      "question": "What payment methods do you accept?",
+      "answer": "I accept bank transfers, cash, and mobile money (MTN/Airtel). Payment should be made via WhatsApp confirmation."
+    },
+    {
+      "id": 7,
+      "category": "Payments & Deposits",
+      "question": "What if I need to reschedule?",
+      "answer": "Reschedules are allowed up to 48 hours before your appointment. Your deposit will be transferred to the new date. Cancellations within 48 hours forfeit the deposit."
+    },
+    {
+      "id": 8,
+      "category": "The Service & Products",
+      "question": "What brands do you use?",
+      "answer": "I use high-end, luxury brands such as MAC, Urban Decay, and other professional makeup lines specially selected for longevity and pigmentation on melanin-rich skin."
+    },
+    {
+      "id": 9,
+      "category": "The Service & Products",
+      "question": "Are the lashes included in every service?",
+      "answer": "Yes, premium false lashes are included in all services. For bridal and photoshoot services, I offer luxury individual lash configurations."
+    },
+    {
+      "id": 10,
+      "category": "The Service & Products",
+      "question": "How long will my makeup last?",
+      "answer": "With my application technique and setting sprays, your makeup is guaranteed to last 12+ hours. I provide you with a touch-up kit for any needed adjustments."
+    },
+    {
+      "id": 11,
+      "category": "Location & Travel",
+      "question": "Where is your studio located?",
+      "answer": "I'm based in Abuja, Nigeria. I offer both in-studio appointments and home services within Abuja for an additional service fee."
+    },
+    {
+      "id": 12,
+      "category": "Location & Travel",
+      "question": "Do you offer destination makeup services?",
+      "answer": "Yes! I travel for destination bookings, including weddings and events outside of Abuja. Travel costs are negotiated individually."
+    },
+    {
+      "id": 13,
+      "category": "Location & Travel",
+      "question": "What's the minimum booking for destination services?",
+      "answer": "Destination bookings typically start with a minimum of 3 clients or a premium flat fee. Let's discuss your specific needs via WhatsApp."
+    }
+  ]
+}

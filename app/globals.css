@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neon Barbie Pink Palette */
+  --color-brand-champagne: #FFF0F8;
+  --color-brand-nude: #FFB3D9;
+  --color-brand-blush: #FF42A1;
+  --color-brand-cocoa: #E6007E;
+  --color-brand-espresso: #6B0033;
+  --color-brand-gold: #FF1493;
+
+  /* Typography */
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+
+  --color-background: var(--color-brand-champagne);
+  --color-foreground: var(--color-brand-espresso);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+/* Headings use the script font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  line-height: 1.2;
+}
+
+/* Body prose paragraphs - Quicksand at a comfortable weight */
+p {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Pink text selection */
+::selection {
+  background-color: var(--color-brand-blush);
+  color: white;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}

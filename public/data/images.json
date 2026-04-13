@@ -1,0 +1,46 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "title": "Bridal Glam",
+      "category": "Bridal",
+      "url": "/Client1.jpg",
+      "alt": "Bridal makeup look"
+    },
+    {
+      "id": 2,
+      "title": "Soft Glam",
+      "category": "Soft Glam",
+      "url": "/Client2.jpg",
+      "alt": "Soft glam makeup look"
+    },
+    {
+      "id": 3,
+      "title": "Editorial",
+      "category": "Editorial",
+      "url": "/Client3.jpg",
+      "alt": "Editorial makeup look"
+    },
+    {
+      "id": 4,
+      "title": "Event Glam",
+      "category": "Event",
+      "url": "/Client4.jpg",
+      "alt": "Event makeup look"
+    },
+    {
+      "id": 5,
+      "title": "Bridal",
+      "category": "Bridal",
+      "url": "/Client5.jpg",
+      "alt": "Bridal makeup portrait"
+    },
+    {
+      "id": 6,
+      "title": "Natural Beat",
+      "category": "Natural",
+      "url": "/Client6.jpg",
+      "alt": "Natural beat makeup look"
+    }
+  ]
+}
