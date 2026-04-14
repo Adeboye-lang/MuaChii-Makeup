@@ -88,22 +88,22 @@ export default function AdminContentPage() {
 
   return (
     <AdminLayout>
-      <div className="space-y-8 max-w-4xl">
+      <div className="space-y-6 sm:space-y-8 max-w-4xl">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h1 className="text-4xl font-serif text-brand-espresso mb-2">Edit Content</h1>
-            <p className="text-brand-espresso/60">Update all page text and messaging</p>
+            <h1 className="text-3xl sm:text-4xl font-serif text-brand-espresso mb-2">Edit Content</h1>
+            <p className="text-xs sm:text-base text-brand-espresso/60">Update all page text and messaging</p>
           </div>
           <Button onClick={handleSave} loading={saving}>
-            <Save size={18} className="mr-2 inline" />
-            Save Changes
+            <Save size={16} className="mr-1.5 inline sm:mr-2" />
+            <span className="text-xs sm:text-sm">Save</span>
           </Button>
         </div>
 
         {/* Hero Section */}
-        <div className="bg-white rounded-2xl border-2 border-brand-nude/30 p-8 space-y-6">
-          <h2 className="text-2xl font-serif text-brand-espresso">Hero Section</h2>
+        <div className="bg-white rounded-xl sm:rounded-2xl border-2 border-brand-nude/30 p-4 sm:p-8 space-y-4 sm:space-y-6">
+          <h2 className="text-xl sm:text-2xl font-serif text-brand-espresso">Hero Section</h2>
           <FormInput
             label="Headline"
             value={content.hero?.headline || ""}
@@ -127,8 +127,8 @@ export default function AdminContentPage() {
         </div>
 
         {/* Brand Story */}
-        <div className="bg-white rounded-2xl border-2 border-brand-nude/30 p-8 space-y-6">
-          <h2 className="text-2xl font-serif text-brand-espresso">Brand Story</h2>
+        <div className="bg-white rounded-xl sm:rounded-2xl border-2 border-brand-nude/30 p-4 sm:p-8 space-y-4 sm:space-y-6">
+          <h2 className="text-xl sm:text-2xl font-serif text-brand-espresso">Brand Story</h2>
           <FormInput
             label="Title"
             value={content.brandStory?.title || ""}
@@ -164,8 +164,8 @@ export default function AdminContentPage() {
         </div>
 
         {/* Contact Information */}
-        <div className="bg-white rounded-2xl border-2 border-brand-nude/30 p-8 space-y-6">
-          <h2 className="text-2xl font-serif text-brand-espresso">Contact Information</h2>
+        <div className="bg-white rounded-xl sm:rounded-2xl border-2 border-brand-nude/30 p-4 sm:p-8 space-y-4 sm:space-y-6">
+          <h2 className="text-xl sm:text-2xl font-serif text-brand-espresso">Contact Information</h2>
           <FormInput
             label="Email"
             type="email"

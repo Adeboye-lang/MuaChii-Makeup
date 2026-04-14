@@ -115,19 +115,19 @@ export default function AdminGalleryPage() {
     <AdminLayout>
       <div className="space-y-8 max-w-6xl">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h1 className="text-4xl font-serif text-brand-espresso mb-2">Manage Gallery</h1>
-            <p className="text-brand-espresso/60">Add, edit, and manage your portfolio gallery images</p>
+            <h1 className="text-3xl sm:text-4xl font-serif text-brand-espresso mb-2">Manage Gallery</h1>
+            <p className="text-sm sm:text-base text-brand-espresso/60">Add, edit, and manage your portfolio gallery images</p>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-col gap-2 sm:flex-row sm:gap-3">
             <Button onClick={addItem} variant="secondary">
-              <Plus size={18} className="mr-2 inline" />
-              Add Item
+              <Plus size={16} className="mr-1.5 inline sm:mr-2" />
+              <span className="text-xs sm:text-sm">Add Item</span>
             </Button>
             <Button onClick={handleSave} loading={saving}>
-              <Save size={18} className="mr-2 inline" />
-              Save Changes
+              <Save size={16} className="mr-1.5 inline sm:mr-2" />
+              <span className="text-xs sm:text-sm">Save</span>
             </Button>
           </div>
         </div>
@@ -135,11 +135,11 @@ export default function AdminGalleryPage() {
         {/* Gallery Items */}
         <div className="space-y-4">
           {gallery.gallery.map((item: GalleryItem) => (
-            <div key={item.id} className="bg-white rounded-2xl border-2 border-brand-nude/30 p-6 space-y-4">
+            <div key={item.id} className="bg-white rounded-xl sm:rounded-2xl border-2 border-brand-nude/30 p-4 sm:p-6 space-y-4">
               {/* Image Preview */}
               <div className="relative">
                 {item.url ? (
-                  <div className="w-full h-48 rounded-xl overflow-hidden border-2 border-brand-nude/30">
+                  <div className="w-full h-32 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden border-2 border-brand-nude/30">
                     <img
                       src={item.url}
                       alt={item.alt}
@@ -147,14 +147,14 @@ export default function AdminGalleryPage() {
                     />
                   </div>
                 ) : (
-                  <div className="w-full h-48 rounded-xl bg-brand-champagne/50 border-2 border-dashed border-brand-nude/30 flex items-center justify-center">
-                    <p className="text-brand-espresso/50 text-sm">No image URL provided</p>
+                  <div className="w-full h-32 sm:h-48 rounded-lg sm:rounded-xl bg-brand-champagne/50 border-2 border-dashed border-brand-nude/30 flex items-center justify-center">
+                    <p className="text-xs sm:text-sm text-brand-espresso/50">No image URL provided</p>
                   </div>
                 )}
               </div>
 
               {/* Fields */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 <div className="flex-1">
                   <FormInput
                     label="Title"

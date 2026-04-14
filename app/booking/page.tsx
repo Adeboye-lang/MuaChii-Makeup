@@ -592,7 +592,7 @@ export default function BookingPage() {
               </div>
 
               {/* Step Content */}
-              <div className="bg-brand-champagne/50 rounded-[2.5rem] p-6 md:p-10 border-2 border-white shadow-xl shadow-brand-blush/5">
+              <div className="bg-brand-champagne/50 rounded-2xl sm:rounded-[2.5rem] p-4 sm:p-8 md:p-10 border-2 border-white shadow-xl shadow-brand-blush/5">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={step}
@@ -601,7 +601,7 @@ export default function BookingPage() {
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <h3 className="text-2xl font-serif text-brand-espresso mb-8">
+                    <h3 className="text-lg sm:text-2xl font-serif text-brand-espresso mb-6 sm:mb-8">
                       {step === 0 && "Choose Your Service"}
                       {step === 1 && "Pick Your Date & Time"}
                       {step === 2 && "Tell Us About You"}
@@ -616,42 +616,42 @@ export default function BookingPage() {
                 </AnimatePresence>
 
                 {/* Navigation + running total */}
-                <div className="flex items-center justify-between mt-10 pt-6 border-t border-brand-nude/30 gap-4 flex-wrap">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mt-8 sm:mt-10 pt-4 sm:pt-6 border-t border-brand-nude/30">
                   <div>
                     {total && step > 0 ? (
                       <div>
                         <p className="text-xs font-extrabold uppercase tracking-wider text-brand-espresso/40">Running Total</p>
-                        <p className="font-serif text-xl text-brand-espresso font-bold">{formatNaira(total)}</p>
+                        <p className="font-serif text-lg sm:text-xl text-brand-espresso font-bold">{formatNaira(total)}</p>
                       </div>
                     ) : <div />}
                   </div>
 
-                  <div className="flex items-center gap-4">
+                  <div className="flex flex-col gap-2 sm:flex-row sm:gap-4 w-full sm:w-auto">
                     {step > 0 && (
                       <button
                         onClick={() => setStep(s => s - 1)}
-                        className="flex items-center gap-2 px-6 py-3 bg-white border-2 border-brand-nude text-brand-espresso text-sm font-bold rounded-full hover:border-brand-blush transition-all"
+                        className="flex items-center justify-center gap-2 px-4 sm:px-6 py-3 bg-white border-2 border-brand-nude text-brand-espresso text-xs sm:text-sm font-bold rounded-full hover:border-brand-blush transition-all"
                       >
-                        <ChevronLeft size={16} /> Back
+                        <ChevronLeft size={14} className="sm:w-4 sm:h-4" /> <span>Back</span>
                       </button>
                     )}
                     {step < STEPS.length - 1 ? (
                       <button
                         onClick={() => canProceed && setStep(s => s + 1)}
                         disabled={!canProceed}
-                        className={`flex items-center gap-2 px-8 py-3 text-white text-sm font-extrabold uppercase tracking-widest rounded-full transition-all ${
+                        className={`flex items-center justify-center gap-2 px-4 sm:px-8 py-3 text-white text-xs sm:text-sm font-extrabold uppercase tracking-widest rounded-full transition-all ${
                           canProceed
                             ? "bg-gradient-to-r from-brand-cocoa to-brand-blush hover:shadow-xl hover:shadow-brand-blush/30 hover:-translate-y-0.5 shadow-lg"
                             : "bg-brand-espresso/20 cursor-not-allowed"
                         }`}
                       >
-                        Continue <ChevronRight size={16} />
+                        Continue <ChevronRight size={14} className="sm:w-4 sm:h-4" />
                       </button>
                     ) : (
                       <button
                         onClick={handleSubmit}
                         disabled={!canProceed}
-                        className={`flex items-center gap-2 px-8 py-3 text-white text-sm font-extrabold uppercase tracking-widest rounded-full transition-all ${
+                        className={`flex items-center justify-center gap-2 px-4 sm:px-8 py-3 text-white text-xs sm:text-sm font-extrabold uppercase tracking-widest rounded-full transition-all ${
                           canProceed
                             ? "bg-gradient-to-r from-brand-cocoa to-brand-blush hover:shadow-xl hover:shadow-brand-blush/30 hover:-translate-y-0.5 shadow-lg"
                             : "bg-brand-espresso/20 cursor-not-allowed"

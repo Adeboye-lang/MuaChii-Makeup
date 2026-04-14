@@ -41,28 +41,28 @@ export default async function AdminDashboard() {
 
   return (
     <AdminLayout>
-      <div className="space-y-8">
+      <div className="space-y-6 sm:space-y-8 px-2 sm:px-0">
         {/* Header */}
         <div>
-          <h1 className="text-4xl font-serif text-brand-espresso mb-2">Dashboard</h1>
-          <p className="text-brand-espresso/60 font-medium">Welcome back! Here's your site overview.</p>
+          <h1 className="text-3xl sm:text-4xl font-serif text-brand-espresso mb-2">Dashboard</h1>
+          <p className="text-xs sm:text-base text-brand-espresso/60 font-medium">Welcome back! Here's your site overview.</p>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {stats.map((stat) => {
             const Icon = stat.icon;
             return (
               <div
                 key={stat.label}
-                className={`bg-linear-to-br ${stat.color} p-6 rounded-2xl text-white shadow-lg hover:shadow-xl transition-all`}
+                className={`bg-linear-to-br ${stat.color} p-4 sm:p-6 rounded-xl sm:rounded-2xl text-white shadow-lg hover:shadow-xl transition-all`}
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <p className="text-white/80 text-sm font-medium">{stat.label}</p>
-                    <p className="text-4xl font-serif font-bold mt-1">{stat.value}</p>
+                    <p className="text-white/80 text-xs sm:text-sm font-medium">{stat.label}</p>
+                    <p className="text-2xl sm:text-4xl font-serif font-bold mt-1">{stat.value}</p>
                   </div>
-                  <Icon size={24} className="opacity-40" />
+                  <Icon size={20} className="opacity-40 sm:w-6 sm:h-6" />
                 </div>
               </div>
             );
@@ -70,33 +70,33 @@ export default async function AdminDashboard() {
         </div>
 
         {/* Quick Actions */}
-        <div className="bg-white rounded-2xl border-2 border-brand-nude/30 p-8">
-          <h2 className="text-2xl font-serif text-brand-espresso mb-6">Quick Actions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="bg-white rounded-xl sm:rounded-2xl border-2 border-brand-nude/30 p-4 sm:p-8">
+          <h2 className="text-xl sm:text-2xl font-serif text-brand-espresso mb-4 sm:mb-6">Quick Actions</h2>
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4">
             <a
               href="/admin/content"
-              className="p-4 rounded-xl bg-brand-champagne/50 hover:bg-brand-blush/10 transition-all text-center group"
+              className="p-3 sm:p-4 rounded-lg sm:rounded-xl bg-brand-champagne/50 hover:bg-brand-blush/10 transition-all text-center group"
             >
-              <FileText className="text-brand-blush/50 group-hover:text-brand-cocoa mx-auto mb-2 transition-colors" size={32} />
-              <p className="text-sm font-bold text-brand-espresso">Edit Content</p>
+              <FileText className="text-brand-blush/50 group-hover:text-brand-cocoa mx-auto mb-2 transition-colors" size={24} />
+              <p className="text-xs sm:text-sm font-bold text-brand-espresso">Edit Content</p>
             </a>
             <a
               href="/admin/services"
-              className="p-4 rounded-xl bg-brand-champagne/50 hover:bg-brand-blush/10 transition-all text-center group"
+              className="p-3 sm:p-4 rounded-lg sm:rounded-xl bg-brand-champagne/50 hover:bg-brand-blush/10 transition-all text-center group"
             >
-              <Zap className="text-brand-blush/50 group-hover:text-brand-cocoa mx-auto mb-2 transition-colors" size={32} />
-              <p className="text-sm font-bold text-brand-espresso">Manage Services</p>
+              <Zap className="text-brand-blush/50 group-hover:text-brand-cocoa mx-auto mb-2 transition-colors" size={24} />
+              <p className="text-xs sm:text-sm font-bold text-brand-espresso">Manage Services</p>
             </a>
             <a
               href="/admin/bookings"
-              className="p-4 rounded-xl bg-brand-champagne/50 hover:bg-brand-blush/10 transition-all text-center group"
+              className="p-3 sm:p-4 rounded-lg sm:rounded-xl bg-brand-champagne/50 hover:bg-brand-blush/10 transition-all text-center group"
             >
-              <BookOpen className="text-brand-blush/50 group-hover:text-brand-cocoa mx-auto mb-2 transition-colors" size={32} />
-              <p className="text-sm font-bold text-brand-espresso">View Bookings</p>
+              <BookOpen className="text-brand-blush/50 group-hover:text-brand-cocoa mx-auto mb-2 transition-colors" size={24} />
+              <p className="text-xs sm:text-sm font-bold text-brand-espresso">View Bookings</p>
             </a>
             <a
               href="/admin/gallery"
-              className="p-4 rounded-xl bg-brand-champagne/50 hover:bg-brand-blush/10 transition-all text-center group"
+              className="p-3 sm:p-4 rounded-lg sm:rounded-xl bg-brand-champagne/50 hover:bg-brand-blush/10 transition-all text-center group"
             >
               <FileText className="text-brand-blush/50 group-hover:text-brand-cocoa mx-auto mb-2 transition-colors" size={32} />
               <p className="text-sm font-bold text-brand-espresso">Manage Gallery</p>

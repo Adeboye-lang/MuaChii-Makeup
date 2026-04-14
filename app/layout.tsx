@@ -22,7 +22,24 @@ export const metadata: Metadata = {
   description: "Premium feminine makeup artistry in Abuja, Nigeria. Bridal, editorial, and soft glam services.",
   icons: {
     icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
+  openGraph: {
+    title: "MuaChii | Feminine Luxury Beauty",
+    description: "Premium feminine makeup artistry in Abuja, Nigeria. Bridal, editorial, and soft glam services.",
+    images: [
+      {
+        url: "/favicon.svg",
+        width: 192,
+        height: 192,
+        alt: "MuaChii Makeup Logo",
+      },
+    ],
+  },
+  themeColor: "#FFF5E6",
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
 };
 
 export default function RootLayout({
